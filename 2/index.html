@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My forms</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="wrapper_pen"><img src="./image/pencil.png" alt=""></div>
+    <div class="wrapper_tablet">
+        <div class="do_task">
+            <p>Список завдань</p>
+            <div class="task" id="1" onclick="removeElement(event)">
+                <input type="checkbox" class="custom-checkbox" name="task">
+                <label class="label">HTML5</label>
+            </div>
+        </div>
+        <div class="add_task">
+            <p>Додати нове завдання</p>
+            <input type="text" name="add_newTask" id="text">
+            <button onclick="addNewTodo(event)" class="button">
+                Додати
+            </button>
+
+        </div>
+    </div>
+</div>
+<div id="popup" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="popup__close" onclick="closePopup(event)">X</a>
+            <div class="popup__title">Попередження!</div>
+            <div class="popup__text"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
